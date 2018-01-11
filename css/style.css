@@ -1,0 +1,115 @@
+/* general */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* clearfix */
+.group:before,
+.group:after {
+  content: " ";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+body {
+  color: #333;
+  font-family: verdana;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased; }
+
+.content {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+header {
+  background: #232323;
+  height: 75px; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+#logo {
+  text-transform: uppercase;
+  color: #eee;
+  margin: 0;
+  margin-left: 6px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: 400; }
+  #logo a {
+    border: 2px solid #3A9EDD;
+    border-radius: 3px;
+    padding: 4px; }
+
+.menu {
+  float: right;
+  margin-right: 6px;
+  margin-top: 22px;
+  margin-bottom: 22px; }
+  .menu ul {
+    margin: 0;
+    padding: 0; }
+  .menu li {
+    display: inline-block;
+    color: #3A9EDD;
+    padding: 5px 0 5px 12px;
+    font-weight: 400;
+    font-size: 1.1em; }
+
+.menu li:hover {
+  color: #65b3e4; }
+
+.sub-header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 7px;
+  background-image: url("../img/triangle-black-white.png");
+  background-repeat: repeat-x;
+  background-size: 14px 7px;
+  bottom: 4em; }
+
+/*
+MAIN
+ */
+.uvod {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-top: 12px;
+  margin-bottom: 12px; }
+  .uvod a {
+    margin: 0 15px;
+    background: #3A9EDD;
+    padding: 8px;
+    border-radius: 6px;
+    color: #fff; }
+  .uvod h2 {
+    margin: 0 0 24px 0;
+    padding: 0;
+    color: #444; }
+
+.background {
+  text-align: center;
+  margin: 6px 0; }
+  .background img {
+    border-radius: 50%;
+    padding-top: 2px; }
+
+.text-1 {
+  color: #DD3333;
+  font-size: 1.2em;
+  margin: 0 6px;
+  border-top: 1px solid #3A9EDD;
+  border-bottom: 1px solid #3A9EDD;
+  margin-bottom: 2px; }
+
+.text-2 {
+  font-size: .75em;
+  padding: 4px 6px; }
