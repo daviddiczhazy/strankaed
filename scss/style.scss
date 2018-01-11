@@ -3,6 +3,7 @@ $color-text: #333;
 $color-text-decoration: #3A9EDD;
 $color-text-quote: #DD3333;
 
+$font-family-sans: Montserrat, sans-serif;
 
 /* general */
 html { box-sizing: border-box; }
@@ -16,9 +17,10 @@ html { box-sizing: border-box; }
 body {
 	color: $color-text;
 	font: {
-		family: verdana;
+		family: $font-family-sans;
 		size: 1em;
 		}
+	line-height: 1.4em;
 	-webkit-font-smoothing: antialiased;
 
 }
@@ -38,6 +40,8 @@ a {
 	text-decoration: none;
 }
 
+
+
 #logo {
 	text-transform: uppercase;
 	color: #eee;
@@ -49,7 +53,7 @@ a {
 
 	display: inline-block;
 	font: {	size: 1.4em;
-			weight: 400;
+			weight: 500;
 		}
 	a {
 	border: 2px solid $color-text-decoration;
@@ -104,7 +108,7 @@ MAIN
 .uvod {
 	text-align: center;
 	font: {
-		weight: 600;
+		weight: 500;
 		size: 1.1em;
 	}
 
@@ -112,18 +116,33 @@ MAIN
 		top: 12px;
 		bottom: 12px;
 	}
-	a {
-	margin: 0 15px;
-	background: $color-text-decoration;
-	padding: 8px;
-	border-radius: 6px;
-	color: #fff;
-	}
+
 	h2 {
 	margin: 0 0 24px 0;
 	padding: 0;
 	color: #444;
 }
+}
+
+.box {
+	display: inline-block;
+	width: 32%;
+	height: auto;
+	border: 1px solid $color-text-decoration;
+
+	h3 {
+		background: $color-text-decoration;
+		margin: 0;
+		color: #fff;
+		padding: 8px;
+	}
+	p {
+		font-size: .85em;
+		color: $color-text-decoration;
+		}
+	.handle {
+		display: none;
+	}
 }
 
 
@@ -140,20 +159,25 @@ MAIN
 
 .text-1 {
 	color: $color-text-quote;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	margin: 0 6px;
 	border: {
 			top: 1px solid $color-text-decoration;
 			bottom: 1px solid $color-text-decoration;
 		}
-	margin-bottom: 2px;
+	blockquote {
+		line-height: 1.5em;
+	}
+	margin-bottom: 1em;
 }
 
 .text-2 {
-	font-size: .75em;
+	font-size: 1em;
 	padding: 4px 6px;
 
-	h3 {
+	h2 {
 		text-align: center;
+		color: #444;
+		margin-top: 0;
 	}
 }
