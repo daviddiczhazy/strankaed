@@ -18,7 +18,7 @@ body {
 	color: $color-text;
 	font: {
 		family: $font-family-sans;
-		size: 1em;
+		size: 100%;
 		}
 	line-height: 1.4em;
 	-webkit-font-smoothing: antialiased;
@@ -26,7 +26,7 @@ body {
 }
 
 .content {
-	max-width: 1140px;
+	max-width: 960px;
 	margin:  0 auto;
 }
 
@@ -126,8 +126,8 @@ MAIN
 
 .box {
 	display: inline-block;
-	width: 32%;
-	height: auto;
+	width: 32.5%;
+	height: 10em;
 	border: 1px solid $color-text-decoration;
 
 	h3 {
@@ -135,6 +135,7 @@ MAIN
 		margin: 0;
 		color: #fff;
 		padding: 8px;
+		font-size: 1em;
 	}
 	p {
 		font-size: .85em;
@@ -159,20 +160,20 @@ MAIN
 
 .text-1 {
 	color: $color-text-quote;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	margin: 0 6px;
 	border: {
 			top: 1px solid $color-text-decoration;
 			bottom: 1px solid $color-text-decoration;
 		}
 	blockquote {
-		line-height: 1.5em;
+		line-height: 1.5;
 	}
 	margin-bottom: 1em;
 }
 
 .text-2 {
-	font-size: 1em;
+	font-size: .95em;
 	padding: 4px 6px;
 
 	h2 {
