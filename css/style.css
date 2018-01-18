@@ -23,7 +23,7 @@ body {
   color: #333;
   font-family: Montserrat, sans-serif;
   font-size: 100%;
-  line-height: 1.4em;
+  line-height: 1.5em;
   -webkit-font-smoothing: antialiased; }
 
 .content {
@@ -91,14 +91,15 @@ MAIN
   margin-top: 12px;
   margin-bottom: 12px; }
   .uvod h2 {
-    margin: 0 0 24px 0;
+    margin: 0 0 .25em 0;
     padding: 0;
     color: #444; }
 
 .box {
-  display: inline-block;
-  width: 32.5%;
-  height: 10em;
+  float: left;
+  width: 32%;
+  height: 12em;
+  margin: .75em 0.25%;
   border: 1px solid #3A9EDD; }
   .box h3 {
     background: #3A9EDD;
@@ -120,21 +121,23 @@ MAIN
     padding-top: 2px; }
 
 .text-1 {
+  text-align: center;
   color: #DD3333;
   font-size: 1.2em;
-  margin: 0 6px;
+  margin: 0 8px;
   border-top: 1px solid #3A9EDD;
   border-bottom: 1px solid #3A9EDD;
   margin-bottom: 1em; }
   .text-1 blockquote {
-    line-height: 1.5; }
+    line-height: 1.75;
+    margin: 1em 1.6em; }
 
 .center {
   text-align: center; }
 
 .text-2 {
   font-size: .95em;
-  padding: 4px 6px; }
+  padding: .75em .625em; }
   .text-2 h2 {
     text-align: center;
     color: #444;
@@ -146,24 +149,34 @@ MAIN
 #ebook {
   background: #bcdef4;
   height: 25em; }
+  #ebook h2 {
+    color: white; }
 
 .ebook {
   margin-top: 3em; }
 
 #clanky {
   background: rgba(58, 158, 221, 0.15);
-  height: 25em; }
+  height: 62em; }
+  #clanky h2 {
+    text-align: center;
+    color: #3A9EDD;
+    margin-bottom: 0; }
 
 .clanok {
   margin: 2em 0.5%;
   float: left;
-  max-width: 49%;
+  width: 49%;
   height: 250px; }
   .clanok h4 {
+    text-align: center;
     margin: 0;
     padding: 0.5em;
     background: #3A9EDD;
-    color: white; }
+    color: white;
+    width: 100%;
+    height: 2.3em;
+    overflow: hidden; }
   .clanok .backimage1 {
     background: url("../img/precojupotrebujeme.jpg") center center no-repeat;
     width: 100%;
@@ -176,8 +189,41 @@ MAIN
     height: 220px;
     background-size: cover;
     border: 1px solid #3A9EDD; }
+  .clanok .backimage3 {
+    background: url("../img/cooperation.jpg") center center no-repeat;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    border: 1px solid #3A9EDD; }
+  .clanok .backimage4 {
+    background: url("../img/vioMe.jpg") center center no-repeat;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    border: 1px solid #3A9EDD; }
+  .clanok .backimage5 {
+    background: url("../img/Mondragon-I.jpg") center center no-repeat;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    border: 1px solid #3A9EDD; }
+  .clanok .backimage6 {
+    background: url("../img/VB.jpg") center center no-repeat;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    border: 1px solid #3A9EDD; }
 
 .druzstvo1 {
   border-bottom: 1px solid #3A9EDD; }
+  .druzstvo1 h2 {
+    margin: 1.5em; }
+
+.email {
+  font-size: 1.5em; }
+
+footer {
+  background: #232323;
+  height: 16em; }
 
 /*# sourceMappingURL=style.css.map */
