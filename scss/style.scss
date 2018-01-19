@@ -1,11 +1,10 @@
-// VARIABLES
-$color-text: #333;
-$color-text-decoration: #3A9EDD;
-$color-text-quote: #DD3333;
-$color-background-upDown: #232323;
-$color-headings: #444;
+@import "variables.scss";
 
-$font-family-sans: Montserrat, sans-serif;
+/*
+HEADER -----------------------------------
+ */
+
+@import "_header.scss";
 
 /* general */
 html { box-sizing: border-box; }
@@ -15,12 +14,6 @@ html { box-sizing: border-box; }
 .group:before,
 .group:after { content: " "; display: table; }
 .group:after { clear: both; }
-
-img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-}
 
 body {
 	color: $color-text;
@@ -38,9 +31,10 @@ body {
 	margin:  0 auto;
 }
 
-header {
-	background: $color-background-upDown;
-	height: 75px;
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
 }
 
 a {
@@ -48,254 +42,23 @@ a {
 	text-decoration: none;
 }
 
-
-
-#logo {
-	text-transform: uppercase;
-	color: #eee;
-	margin: 0;
-	margin: {
-			left: 6px;
-			top: 24px;
-			bottom: 24px;}
-
-	display: inline-block;
-	font: {	size: 1.4em;
-			weight: 500;
-		}
-	a {
-	border: 2px solid $color-text-decoration;
-	border-radius: 3px;
-	padding: 4px;
-	}
-	}
-
-.menu {
-	float: right;
-	margin: {
-		right: 6px;
-		top: 22px;
-		bottom: 22px;
-	}
-	ul {
-	margin: 0;
-	padding: 0;
-	}
-	li {
-	display: inline-block;
-	color: $color-text-decoration;
-	padding: 5px 0 5px 12px;
-	font: {
-		weight: 400;
-		size: 1.1em;
-	}
-}
-}
-
-.menu li:hover {
-	color: #65b3e4;
-}
-
-.sub-header {
-	position: relative;
-	top: 0;
-	width: 100%;
-	height: 7px;
-	background: {
-			image: url('../img/triangle-black-white.png');
-			repeat: repeat-x;
-			size: 14px 7px;
-		}
-	bottom: 4em;
-}
-
 /*
-MAIN
+MAIN -------------------------------------
  */
 
-.uvod {
-	text-align: center;
-	font: {
-		weight: 500;
-		size: 1.1em;
-	}
+@import "pages/_uvod.scss";
 
-	margin: {
-		top: 12px;
-		bottom: 12px;
-	}
+@import "pages/_ebook.scss";
 
-	h2 {
-	margin: 0 0 .25em 0;
-	padding: 0;
-	color: $color-headings;
-}
-}
+@import "pages/_clanok.scss";
 
-.box {
-	float: left;
-	width: 32%;
-	height: 12em;
-	margin: .75em 0.25%;
-	border: 1px solid $color-text-decoration;
+@import "pages/_druzstvo.scss";
 
-	h3 {
-		background: $color-text-decoration;
-		margin: 0;
-		color: #fff;
-		padding: 8px;
-		font-size: 1em;
-	}
-	p {
-		font-size: .85em;
-		color: $color-text-decoration;
-		}
-	.handle {
-		display: none;
-	}
-}
+@import "_media.scss";
 
-
-.background {
-	text-align: center;
-	margin: 6px 0;
-
-	img {
-	border-radius: 50%;
-	padding-top: 2px;
-}
-}
-
-
-.text-1 {
-	text-align: center;
-	color: $color-text-quote;
-	font-size: 1.2em;
-	margin: 0 8px;
-	border: {
-			top: 1px solid $color-text-decoration;
-			bottom: 1px solid $color-text-decoration;
-		}
-	blockquote {
-		line-height: 1.75;
-		margin: 1em 1.6em;
-	}
-	margin-bottom: 1em;
-}
-
-.center {
-	text-align: center;
-}
-
-.text-2 {
-	font-size: .95em;
-	padding: .75em .625em;
-
-	h2 {
-		text-align: center;
-		color: $color-headings;
-		margin-top: 0;
-	}
-}
-
-.imgright {
-	float: right;
-}
-
-#ebook{
-	background: lighten($color-text-decoration, 30%);
-	height: 25em;
-	   h2 {
-   	color: white;
-   }
-}
-
-.ebook {
-margin-top: 3em;
-
-}
-
-#clanky {
-	background: transparentize($color-text-decoration, .85);
-	height: 62em;
-	h2 {
-		text-align: center;
-		color: $color-text-decoration;
-		margin-bottom: 0;
-	}
-}
-
-.clanok {
-	margin: 2em 0.5%;
-	float: left;
-	width: 49%;
-	height: 250px;
-
-	h4 {
-		text-align: center;
-		margin: 0;
-		padding: 0.5em;
-		background: $color-text-decoration;
-		color: white;
-		width: 100%;
-		height: 2.3em;
-		overflow: hidden;
-}
-	.backimage1 {
-		background: url('../img/precojupotrebujeme.jpg') center center no-repeat;
-		width: 100%;
-		height: 220px;
-		background-size: cover;
-		border: 1px solid $color-text-decoration;
-	}
-	.backimage2 {
-		background: url('../img/socpodlaDavida.png') center center no-repeat;
-		width: 100%;
-		height: 220px;
-		background-size: cover;
-		border: 1px solid $color-text-decoration;
-	}
-	.backimage3 {
-		background: url('../img/cooperation.jpg') center center no-repeat;
-		width: 100%;
-		height: 220px;
-		background-size: cover;
-		border: 1px solid $color-text-decoration;
-	}
-	.backimage4 {
-		background: url('../img/vioMe.jpg') center center no-repeat;
-		width: 100%;
-		height: 220px;
-		background-size: cover;
-		border: 1px solid $color-text-decoration;
-	}
-	.backimage5 {
-		background: url('../img/Mondragon-I.jpg') center center no-repeat;
-		width: 100%;
-		height: 220px;
-		background-size: cover;
-		border: 1px solid $color-text-decoration;
-	}
-	.backimage6 {
-		background: url('../img/VB.jpg') center center no-repeat;
-		width: 100%;
-		height: 220px;
-		background-size: cover;
-		border: 1px solid $color-text-decoration;
-	}
-}
-
-
-.druzstvo1 {
-	border-bottom: 1px solid $color-text-decoration;
-	h2 {
-		margin: 1.5em;
-	}
-}
-
-.email {
-	font-size: 1.5em;
-}
+/*
+FOOTER ------------------------------------
+ */
 
 footer {
 	background: $color-background-upDown;

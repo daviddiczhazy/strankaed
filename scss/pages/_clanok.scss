@@ -1,0 +1,70 @@
+
+.clanok {
+	margin: 2em 0.5%;
+	float: left;
+	width: 49%;
+	height: 250px;
+
+	h4 {
+		text-align: center;
+		margin: 0;
+		padding: 0.5em;
+		background: $color-text-decoration;
+		color: white;
+		width: 100%;
+		height: 2.3em;
+		overflow: hidden;
+}
+	.backimage1 {
+		background: url('../img/precojupotrebujeme.jpg') center center no-repeat;
+		width: 100%;
+		height: 220px;
+		background-size: cover;
+		border: 1px solid $color-text-decoration;
+	}
+	.backimage2 {
+		background: url('../img/socpodlaDavida.png') center center no-repeat;
+		width: 100%;
+		height: 220px;
+		background-size: cover;
+		border: 1px solid $color-text-decoration;
+	}
+	.backimage3 {
+		background: url('../img/cooperation.jpg') center center no-repeat;
+		width: 100%;
+		height: 220px;
+		background-size: cover;
+		border: 1px solid $color-text-decoration;
+	}
+	.backimage4 {
+		background: url('../img/vioMe.jpg') center center no-repeat;
+		width: 100%;
+		height: 220px;
+		background-size: cover;
+		border: 1px solid $color-text-decoration;
+	}
+	.backimage5 {
+		background: url('../img/Mondragon-I.jpg') center center no-repeat;
+		width: 100%;
+		height: 220px;
+		background-size: cover;
+		border: 1px solid $color-text-decoration;
+	}
+	.backimage6 {
+		background: url('../img/VB.jpg') center center no-repeat;
+		width: 100%;
+		height: 220px;
+		background-size: cover;
+		border: 1px solid $color-text-decoration;
+	}
+}
+
+#clanky {
+	background: transparentize($color-text-decoration, .85);
+	height: 62em;
+	h2 {
+		text-align: center;
+		color: $color-text-decoration;
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,90 @@
+.uvod {
+	text-align: center;
+	font: {
+		weight: 500;
+		size: 1em;
+	}
+
+	margin: {
+		top: 12px;
+		bottom: 12px;
+	}
+
+	h2 {
+	margin: 0 0 .25em 0;
+	padding: 0;
+	color: $color-headings;
+}
+}
+
+.box {
+	float: left;
+	width: 32%;
+	height: 12em;
+	margin: .75em 0.25%;
+	border: 1px solid $color-text-decoration;
+
+	h3 {
+		background: $color-text-decoration;
+		margin: 0;
+		color: #fff;
+		padding: 8px;
+		font-size: 1em;
+	}
+	p {
+		font-size: .85em;
+		color: $color-text-decoration;
+		padding: 0 .25em;
+		line-height: 1.75;
+		}
+	.handle {
+		display: none;
+	}
+}
+
+
+.background {
+	text-align: center;
+	margin: 6px 0;
+
+	img {
+	border-radius: 50%;
+	padding-top: 2px;
+}
+}
+
+
+.text-1 {
+	text-align: center;
+	color: $color-text-quote;
+	font-size: 1.2em;
+	margin: 0 8px;
+	border: {
+			top: 1px solid $color-text-decoration;
+			bottom: 1px solid $color-text-decoration;
+		}
+	blockquote {
+		line-height: 1.75;
+		margin: 1em 1.6em;
+	}
+	margin-bottom: 1em;
+}
+
+.center {
+	text-align: center;
+}
+
+.text-2 {
+	font-size: .95em;
+	padding: .75em .625em;
+
+	h2 {
+		text-align: center;
+		color: $color-headings;
+		margin-top: 0;
+	}
+}
+
+.imgright {
+	float: right;
+}
