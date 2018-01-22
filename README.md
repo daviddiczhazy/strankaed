@@ -1,0 +1,2 @@
+# strankaed
+posledny pokus
